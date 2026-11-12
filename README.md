@@ -6,6 +6,27 @@
 
 ---
 
+## 🤖 Machine Learning Approach
+
+> ### ✅ This project uses **Supervised Machine Learning**
+>
+> | Property | Detail |
+> |----------|--------|
+> | **ML Type** | Supervised Learning |
+> | **Task** | Multi-class Classification (5 classes) |
+> | **Primary Model** | Artificial Neural Network (ANN) |
+> | **Also Benchmarked** | Logistic Regression, Decision Tree, Random Forest, SVM, XGBoost |
+> | **Labels source** | Ground-truth fault labels (`f_nv`) from the dataset |
+> | **Why Supervised?** | We have labelled training data — the model learns the mapping from sensor readings → fault class by seeing thousands of labelled examples |
+
+**Supervised learning** means the model is trained on **input–output pairs**:
+- **Input (X):** 6 sensor readings (`irr`, `pvt`, `idc1`, `idc2`, `vdc1`, `vdc2`)
+- **Output (y):** Known fault label (0 = Normal, 1 = Short-Circuit, … 4 = Shadowing)
+
+The model learns this mapping during training, then **predicts the fault class for new, unseen sensor readings**.
+
+---
+
 ## 📌 Overview
 
 Solar PV systems develop faults — short circuits, open circuits, shading and degradation — that silently reduce power output. This project trains an **Artificial Neural Network (ANN)** to classify **5 operating conditions** from **6 real sensor readings**, benchmarks it against classical ML models, and ships a **live Streamlit web demo**.
