@@ -1,0 +1,17 @@
+.venv/
+__pycache__/
+*.pyc
+.vscode/
+.DS_Store
+
+# Large dataset files
+dataset_elec.mat
+dataset_amb.mat
+
+# Cache / build artefacts
+.cache/
+.keras/
+*.zip
+node_modules/
+frontend/dist/
+frontend/node_modules/

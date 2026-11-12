@@ -1,0 +1,64 @@
+Shape: (1373798, 7)
+Original class counts:
+ f_nv
+0    1162931
+1       5999
+2      10371
+3       6024
+4     188473
+Name: count, dtype: int64
+Balanced shape: (25000, 7)
+Balanced class counts:
+ f_nv
+0    5000
+1    5000
+2    5000
+3    5000
+4    5000
+Name: count, dtype: int64
+Duplicate rows in balanced_df: 0
+Train / test shapes: (20000, 6) (5000, 6)
+Test rows that also appear in train: 0
+Scaler saved
+
+FINAL ANN test accuracy: 0.9844 | test loss: 0.0505
+Final train acc: 0.9872 | final val acc: 0.986
+
+Classification report:
+                precision    recall  f1-score   support
+
+       Normal      0.985     0.947     0.966      1000
+Short-Circuit      0.998     0.994     0.996      1000
+  Degradation      0.994     0.997     0.996      1000
+ Open-Circuit      0.999     1.000     1.000      1000
+    Shadowing      0.947     0.984     0.965      1000
+
+     accuracy                          0.984      5000
+    macro avg      0.985     0.984     0.984      5000
+ weighted avg      0.985     0.984     0.984      5000
+
+Confusion matrix:
+ [[ 947    0    0    0   53]
+ [   0  994    6    0    0]
+ [   0    0  997    1    2]
+ [   0    0    0 1000    0]
+ [  14    2    0    0  984]]
+Model saved
+
+MODEL COMPARISON:
+               Model  Accuracy  Macro F1  Train seconds
+Logistic Regression    0.9422    0.9415         0.5340
+      Decision Tree    0.9900    0.9900         0.1922
+      Random Forest    0.9936    0.9936         1.3394
+                SVM    0.9792    0.9792         1.4323
+            XGBoost    0.9952    0.9952         1.4808
+    ANN (this work)    0.9844    0.9844        20.8436
+
+Random Forest feature importance: {'irr': np.float64(0.189), 'pvt': np.float64(0.069), 'idc1': np.float64(0.157), 'idc2': np.float64(0.208), 'vdc1': np.float64(0.077), 'vdc2': np.float64(0.3)}
+RF accuracy before engineered features: 0.9936 | after: 0.9962
+
+NETWORK SIZE EXPERIMENT:
+hidden 8,4 | params 117 | val acc 0.9645 | test acc 0.9600
+hidden 16,8 | params 293 | val acc 0.9815 | test acc 0.9784
+hidden 32,16 | params 837 | val acc 0.9860 | test acc 0.9844
+hidden 64,32 | params 2693 | val acc 0.9885 | test acc 0.9840
