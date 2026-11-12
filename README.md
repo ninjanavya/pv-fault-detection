@@ -2,7 +2,12 @@
 
 > **Author:** Navya Khandelwal (RA2411026030021)  
 > **Subject:** Artificial Neural Networks and Machine Learning  
-> **Demo App:** `streamlit run app.py`
+
+[![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Click%20Here-brightgreen?style=for-the-badge)](https://pv-fault-detection-dpj49atcaxkqhgmahgjxjo.streamlit.app)
+[![GitHub](https://img.shields.io/badge/GitHub-ninjanavya%2Fpv--fault--detection-blue?style=for-the-badge&logo=github)](https://github.com/ninjanavya/pv-fault-detection)
+
+> 🌐 **Live App:** https://pv-fault-detection-dpj49atcaxkqhgmahgjxjo.streamlit.app  
+> No installation needed — open and use directly in your browser!
 
 ---
 
