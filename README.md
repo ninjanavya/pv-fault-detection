@@ -164,7 +164,7 @@ python main.py
 streamlit run app.py
 ```
 
-The app opens at **http://localhost:8501**
+The app opens at **https://pv-fault-detection-dpj49atcaxkqhgmahgjxjo.streamlit.app**
 
 ---
 
